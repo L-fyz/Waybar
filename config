@@ -1,0 +1,29 @@
+{
+  "include": ["./modules.json"],
+  "layer": "top",
+  "position": "top", 
+  "height": 33,
+  "margin-top": 8,
+  "margin-bottom": 0,
+  "margin-left": 5,
+  "margin-right": 5,
+  "modules-left": [
+    "custom/power",
+    "custom/separator",
+    "tray",
+    "custom/separator",
+    "hyprland/window"
+  ],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": [
+    "custom/wallpaper",
+    "custom/separator",
+    "custom/bluetooth",
+    "custom/separator",
+    "cpu",
+    "custom/separator",
+    "network",
+    "custom/separator",
+    "clock"
+  ]
+}

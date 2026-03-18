@@ -1,0 +1,59 @@
+{
+  "cpu": {
+    "format": ": {usage:>3}%"
+  },
+  
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{icon}",
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "10": "10"
+    }
+  },
+
+  "custom/power": {
+    "format": "",
+    "on-click": "poweroff",
+    "tooltip": false
+  },
+
+
+
+  "network": {
+    "format": "Disabled",
+    "format-ethernet": "",
+    "format-disconnected": "",
+    "tooltip-format": "{ifname} via {gwaddri}",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+    "tooltip-format-ethernet": "{ifname} ({ipaddr}/{cidr})",
+    "tooltip-format-disconnected": "",
+    "on-click": "nm-connection-editor"
+  
+  },
+
+  "custom/bluetooth": {
+    "exec": "~/.config/waybar/bluetooth.sh",
+    "on-click": "blueman-manager",
+    "interval": 1,
+    "return-type": "json"
+  },
+
+  "custom/separator": {
+    "format": " · "
+  },
+
+  "custom/wallpaper": {
+    "format": "",
+    "on-click": "~/.config/waybar/wallpaper.py"
+  }
+}

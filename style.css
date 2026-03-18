@@ -1,0 +1,139 @@
+* {
+    all: unset;
+    font-family: "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0.8);
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+#workspaces {
+    background: #141414;
+    border-radius: 10px;
+}
+
+#workspaces button {
+    color: white;
+    font-size: 16px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+#workspaces button:hover {
+    font-size: 20px;
+    background: #000000;
+}
+
+#workspaces button.active {
+    text-shadow:
+        0 0 1px #ffffff,
+        0 0 3px #ffffff,
+        0 0 2px #ffffff;
+    padding: 4 20 4 20;
+}
+
+window#waybar.empty #window {
+    background: none;
+    border: none;
+}
+
+#clock {
+    color: white;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+#window {
+    color: white;
+    font-size: 16px;
+} 
+
+#tray {
+    color: white;
+    font-size: 16px;
+    padding-right: 5px;
+} 
+
+#network {
+    color: rgb(107, 255, 119);
+    font-size: 16px;
+    padding-right: 5px;
+} 
+
+#network:hover {
+    padding-right: 5px;
+    text-shadow:
+        0 0 1px #ffffff,
+        0 0 2px #ffffff,
+        0 0 3px #ffffff;
+}
+
+#network.disconnected, #network.disabled {
+    color: rgb(255, 75, 75);
+    font-size: 16px;
+    padding-right: 5px;
+
+}
+
+#custom-power {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+#custom-power:hover {
+    text-shadow:
+        0 0 1px #ffffff,
+        0 0 2px #ffffff,
+        0 0 3px #ffffff;
+}
+
+#cpu {
+    color: white;
+    font-size: 16px;
+    padding-right: 5px;
+}
+
+#custom-bluetooth:hover {
+    text-shadow:
+        0 0 1px #ffffff,
+        0 0 2px #ffffff,
+        0 0 3px #ffffff;
+}
+
+#custom-bluetooth.disconnected {
+    color: rgb(255, 0, 0);
+    font-size: 16px;
+}
+
+#custom-bluetooth.connected {
+    color: rgb(107, 255, 119);
+    padding: 8px 8px 8px 8px;
+    font-size: 16px;
+}
+
+#custom-bluetooth.high {
+    color: rgb(107, 255, 119);
+    font-size: 16px;
+}
+
+#custom-bluetooth.low {
+    color: rgb(255, 0, 0);
+    font-size: 16px;
+}
+
+#custom-separator {
+    color: #808080;
+    padding: 0px 5px 5px 0px;
+}
+
+#custom-wallpaper {
+    color: #ffffff;
+    padding-right: 5px;
+}
